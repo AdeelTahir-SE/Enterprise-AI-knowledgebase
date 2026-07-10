@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -9,21 +9,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "KnowMatrix — Enterprise AI Knowledge Platform",
-  description:
-    "Secure, scalable, and production-grade RAG-as-a-Service platform to build AI knowledge assistants over your private data.",
+  title: "KnowMatrix - Enterprise AI Knowledge Platform",
+  description: "Secure, scalable, and production-grade RAG-as-a-Service platform to build AI knowledge assistants over your private data.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} antialiased`}>
-      <body className="min-h-screen flex flex-col bg-white text-foreground">
-        {children}
-      </body>
+      <body className="min-h-screen flex flex-col bg-white text-foreground">{children}</body>
     </html>
   );
 }
+
