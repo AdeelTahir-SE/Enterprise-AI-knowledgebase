@@ -44,7 +44,7 @@ export default function Footer() {
               <ul className="space-y-2.5">
                 {links.map((label) => (
                   <li key={label}>
-                    <Link href={label === "Pricing" ? "/pricing" : label === "Blog" ? "/blog" : "#"} className="text-sm text-text-light hover:text-primary">{label}</Link>
+                    <Link href={label === "Pricing" ? "/pricing" : label === "Blog" ? "/blog" : label === "Docs" ? "/docs" : "#"} className="text-sm text-text-light hover:text-primary">{label}</Link>
                   </li>
                 ))}
               </ul>

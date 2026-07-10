@@ -47,13 +47,13 @@ const navLinks = [
     href: "#",
     items: [
       { label: "Blog", description: "Guides, product thinking, and RAG lessons", href: "/blog", icon: Newspaper },
-      { label: "Docs", description: "Developer guides and API reference", href: "#", icon: BookOpen },
+      { label: "Docs", description: "Developer guides and API reference", href: "/docs", icon: BookOpen },
       { label: "Case Studies", description: "How teams deploy KnowMatrix", href: "#", icon: FileText },
       { label: "Help Center", description: "Support articles and best practices", href: "#", icon: LifeBuoy },
     ],
   },
   { label: "Pricing", href: "/pricing" },
-  { label: "Docs", href: "#" },
+  { label: "Docs", href: "/docs" },
 ];
 
 export default function Navbar() {
