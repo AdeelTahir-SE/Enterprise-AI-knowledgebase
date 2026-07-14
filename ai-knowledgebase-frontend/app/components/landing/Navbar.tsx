@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -62,8 +62,10 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border bg-white/85 backdrop-blur-xl">
       <div className="container-main flex h-16 items-center justify-between">
-        <Link href="/" className="group flex items-center gap-2.5">
-          <Image src="/logo-mark.png" alt="" width={56} height={56} priority className="h-12 w-12 object-contain" />
+        <Link href="/" className="group flex items-center gap-3">
+          <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-visible">
+            <Image src="/logo-mark.png" alt="" width={96} height={96} priority className="h-16 w-16 max-w-none object-contain" />
+          </span>
           <span className="text-xl font-bold text-text-dark">KnowMatrix</span>
         </Link>
 
