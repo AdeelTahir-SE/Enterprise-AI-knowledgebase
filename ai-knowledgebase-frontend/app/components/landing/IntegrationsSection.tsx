@@ -1,31 +1,32 @@
-﻿import Link from "next/link";
-import { ArrowRight, Blocks, Box, Braces, CloudCog, Container, DatabaseZap, Ellipsis, FileStack, GitBranch, MessageSquare, PanelsTopLeft, Workflow } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const integrations = [
-  { name: "Slack", icon: MessageSquare },
-  { name: "Microsoft 365", icon: FileStack },
-  { name: "Google Drive", icon: CloudCog },
-  { name: "Confluence", icon: PanelsTopLeft },
-  { name: "Salesforce", icon: Blocks },
-  { name: "More", icon: Ellipsis },
+  { name: "Slack", logo: "https://cdn.simpleicons.org/slack/4A154B" },
+  { name: "Microsoft 365", logo: "https://cdn.simpleicons.org/microsoft365/EB3C00" },
+  { name: "Google Drive", logo: "https://cdn.simpleicons.org/googledrive" },
+  { name: "Confluence", logo: "https://cdn.simpleicons.org/confluence" },
+  { name: "Salesforce", logo: "https://cdn.simpleicons.org/salesforce/00A1E0" },
+  { name: "Notion", logo: "https://cdn.simpleicons.org/notion" },
 ];
 
 const techStack = [
-  { name: "FastAPI", icon: Braces },
-  { name: "LangChain", icon: Workflow },
-  { name: "MongoDB", icon: DatabaseZap },
-  { name: "Apache Kafka", icon: GitBranch },
-  { name: "Docker/k8s", icon: Container },
-  { name: "More", icon: Box },
+  { name: "FastAPI", logo: "https://cdn.simpleicons.org/fastapi" },
+  { name: "LangChain", logo: "https://cdn.simpleicons.org/langchain" },
+  { name: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
+  { name: "Apache Kafka", logo: "https://cdn.simpleicons.org/apachekafka" },
+  { name: "Docker", logo: "https://cdn.simpleicons.org/docker" },
+  { name: "Kubernetes", logo: "https://cdn.simpleicons.org/kubernetes" },
 ];
 
 function ToolGrid({ tools }: { tools: typeof integrations }) {
   return (
     <div className="mb-8 grid grid-cols-3 gap-4 sm:grid-cols-6">
-      {tools.map(({ name, icon: Icon }) => (
+      {tools.map(({ name, logo }) => (
         <div key={name} className="group flex flex-col items-center gap-2.5">
-          <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-white text-text-light group-hover:border-primary/30 group-hover:text-primary group-hover:shadow-md">
-            <Icon size={24} strokeWidth={1.8} />
+          <div className="flex h-14 w-14 items-center justify-center rounded-xl border border-border bg-white p-3 group-hover:border-primary/30 group-hover:shadow-md">
+            <Image src={logo} alt={`${name} logo`} width={28} height={28} className="h-7 w-7 object-contain" unoptimized />
           </div>
           <span className="text-center text-[11px] font-medium leading-tight text-text-light">{name}</span>
         </div>
@@ -65,5 +66,4 @@ export default function IntegrationsSection() {
     </section>
   );
 }
-
 

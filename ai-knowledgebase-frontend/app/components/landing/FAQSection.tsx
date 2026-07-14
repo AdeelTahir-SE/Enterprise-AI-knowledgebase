@@ -66,6 +66,7 @@ export default function FAQSection() {
                     <h3 className="mb-1.5 text-sm font-bold text-text-dark">{question}</h3>
                     <p className="text-xs leading-5 text-text-light sm:text-sm sm:leading-6">{answer}</p>
                   </div>
+                  <ChevronDown size={18} className="mt-1 shrink-0 text-primary" strokeWidth={2.2} />
                 </div>
               </article>
             ))}
