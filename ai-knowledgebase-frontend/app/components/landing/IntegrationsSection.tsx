@@ -3,17 +3,17 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const integrations = [
-  { name: "Slack", logo: "https://cdn.simpleicons.org/slack/4A154B" },
-  { name: "Microsoft 365", logo: "https://cdn.simpleicons.org/microsoft365/EB3C00" },
+  { name: "Slack", logo: "slack.png" },
+  { name: "Microsoft 365", logo: "/microsoft-365.jfif" },
   { name: "Google Drive", logo: "https://cdn.simpleicons.org/googledrive" },
   { name: "Confluence", logo: "https://cdn.simpleicons.org/confluence" },
-  { name: "Salesforce", logo: "https://cdn.simpleicons.org/salesforce/00A1E0" },
+  { name: "Salesforce", logo: "/salesforce.webp" },
   { name: "Notion", logo: "https://cdn.simpleicons.org/notion" },
 ];
 
 const techStack = [
   { name: "FastAPI", logo: "https://cdn.simpleicons.org/fastapi" },
-  { name: "LangChain", logo: "https://cdn.simpleicons.org/langchain" },
+  { name: "LangChain", logo: "/langchain.webp" },
   { name: "MongoDB", logo: "https://cdn.simpleicons.org/mongodb" },
   { name: "Apache Kafka", logo: "https://cdn.simpleicons.org/apachekafka" },
   { name: "Docker", logo: "https://cdn.simpleicons.org/docker" },
