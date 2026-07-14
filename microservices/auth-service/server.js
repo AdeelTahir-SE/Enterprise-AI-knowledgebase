@@ -1,13 +1,5 @@
 import express from 'express'
+import router from './routes/auth.routes';
 const app =express()
-
-app.post('/login', (req, res) => {
-  // Handle login logic here
-  res.send('Login endpoint');
-});
-
-
-app.post('/register', (req, res) => {
-  // Handle registration logic here
-  res.send('Register endpoint');
-});
+app.use(express.json())
+app.use('/',router)
