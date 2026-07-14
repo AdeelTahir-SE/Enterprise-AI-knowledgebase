@@ -5,7 +5,7 @@ export function generateAccessToken(user) {
     {
       id: user._id,
       email: user.email,
-      role: user.role,
+      tier: user.tier,
     },
     process.env.JWT_SECRET,
     {
