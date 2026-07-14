@@ -1,9 +1,10 @@
-import User from "../models/User.js";
-import { hashPassword } from "../utils/hash.js";
+import User from "./User.js";
+import { hashPassword } from "./utils/hash.js";
 
 export async function register(req, res) {
   try {
     const { email, password, userName } = req.body;
+    console.log(email, password, userName);
 
     const exists = await User.findOne({ email });
 
