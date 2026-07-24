@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Check, Database, Eye, LockKeyhole, Mail, UserRound } from "lucide-react";
 import type { ReactNode } from "react";
@@ -15,8 +15,8 @@ export function AuthShell({ title, subtitle, children }: AuthShellProps) {
       <div className="mx-auto grid min-h-[calc(100vh-32px)] max-w-6xl overflow-hidden rounded-2xl border border-border bg-white shadow-[0_18px_60px_-40px_rgba(17,24,39,0.45)] sm:min-h-[calc(100vh-48px)] lg:grid-cols-[0.9fr_1.1fr]">
         <section className="relative overflow-hidden bg-gradient-to-br from-[#5B3FE6] via-primary to-[#7C5CE6] p-8 text-white sm:p-10 lg:p-12">
           <div className="relative z-10 flex h-full flex-col justify-between gap-12">
-            <Link href="/" className="inline-flex w-fit items-center gap-3">
-              <Image src="/logo-mark.png" alt="" width={58} height={58} priority className="h-12 w-12 object-contain" />
+            <Link href="/" className="inline-flex w-fit items-center gap-2.5">
+              <Image src="/logo.png" alt="" width={40} height={40} priority className="h-9 w-9 object-contain brightness-0 invert" />
               <span className="text-xl font-bold">KnowMatrix</span>
             </Link>
 

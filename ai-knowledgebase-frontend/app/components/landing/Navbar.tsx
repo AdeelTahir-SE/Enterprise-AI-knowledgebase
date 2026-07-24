@@ -62,10 +62,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-border bg-white/85 backdrop-blur-xl">
       <div className="container-main flex h-16 items-center justify-between">
-        <Link href="/" className="group flex items-center gap-3">
-          <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-visible">
-            <Image src="/logo.png" alt="" width={96} height={96} priority className="h-16 w-16 max-w-none object-contain" />
-          </span>
+        <Link href="/" className="group flex items-center gap-2.5">
+          <Image src="/logo.png" alt="" width={40} height={40} priority className="h-9 w-9 object-contain" />
           <span className="text-xl font-bold text-text-dark">KnowMatrix</span>
         </Link>
 
