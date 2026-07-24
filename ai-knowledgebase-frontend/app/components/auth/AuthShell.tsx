@@ -54,7 +54,25 @@ export function AuthShell({ title, subtitle, children }: AuthShellProps) {
   );
 }
 
-export function AuthField({ label, type = "text", placeholder, icon }: { label: string; type?: string; placeholder: string; icon: "user" | "mail" | "lock" }) {
+export function AuthField({ 
+  label, 
+  type = "text", 
+  placeholder, 
+  icon,
+  name,
+  value,
+  onChange,
+  required
+}: { 
+  label: string; 
+  type?: string; 
+  placeholder: string; 
+  icon: "user" | "mail" | "lock";
+  name?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
+}) {
   const Icon = icon === "user" ? UserRound : icon === "mail" ? Mail : LockKeyhole;
 
   return (
@@ -62,7 +80,15 @@ export function AuthField({ label, type = "text", placeholder, icon }: { label: 
       <span className="mb-2 block text-sm font-semibold text-text-medium">{label}</span>
       <span className="flex h-12 items-center gap-3 rounded-lg border border-border bg-white px-4 focus-within:border-primary focus-within:ring-4 focus-within:ring-primary/10">
         <Icon size={18} className="text-text-lighter" />
-        <input type={type} placeholder={placeholder} className="min-w-0 flex-1 border-0 bg-transparent text-sm text-text-dark outline-none placeholder:text-text-lighter" />
+        <input 
+          type={type} 
+          name={name}
+          value={value}
+          onChange={onChange}
+          required={required}
+          placeholder={placeholder} 
+          className="min-w-0 flex-1 border-0 bg-transparent text-sm text-text-dark outline-none placeholder:text-text-lighter" 
+        />
         {type === "password" && <Eye size={18} className="text-text-lighter" />}
       </span>
     </label>
