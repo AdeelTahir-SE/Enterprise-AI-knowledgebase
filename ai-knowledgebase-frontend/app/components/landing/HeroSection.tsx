@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { Check } from "lucide-react";
 
@@ -40,23 +40,14 @@ export default function HeroSection() {
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative aspect-[1.08] w-full max-w-[430px] sm:max-w-[560px] lg:max-w-[620px]">
-              <Image
-                src="/blob.svg"
-                alt=""
-                fill
-                priority
-                aria-hidden="true"
-                sizes="(min-width: 1024px) 620px, (min-width: 640px) 560px, 92vw"
-                className="pointer-events-none z-0 object-contain opacity-95 scale-[1.1] sm:scale-[1.14] lg:scale-[1.18]"
-              />
+            <div className="relative aspect-square w-full max-w-[430px] sm:max-w-[520px] lg:max-w-[580px]">
               <Image
                 src="/illustrations/landing-page/hero-section.png"
                 alt="KnowMatrix enterprise AI knowledge assistant dashboard"
                 fill
                 priority
-                sizes="(min-width: 1024px) 560px, (min-width: 640px) 500px, 86vw"
-                className="z-10 object-contain p-3 sm:p-5 lg:p-6"
+                sizes="(min-width: 1024px) 580px, (min-width: 640px) 520px, 92vw"
+                className="object-contain"
               />
             </div>
           </div>

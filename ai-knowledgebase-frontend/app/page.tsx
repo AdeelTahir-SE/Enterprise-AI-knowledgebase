@@ -11,6 +11,7 @@ import TestimonialsSection from "./components/landing/TestimonialsSection";
 import FAQSection from "./components/landing/FAQSection";
 import CTABanner from "./components/landing/CTABanner";
 import Footer from "./components/landing/Footer";
+import TurboVecSection from "./components/landing/TurboVecSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroSection />
         <TrustedBy />
         <FeaturesGrid />
+        <TurboVecSection />
         <OurUsersSection />
         <HowItWorks />
         <EnterpriseSection />

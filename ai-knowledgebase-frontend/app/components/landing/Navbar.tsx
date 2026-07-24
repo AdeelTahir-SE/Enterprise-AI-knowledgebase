@@ -64,7 +64,7 @@ export default function Navbar() {
       <div className="container-main flex h-16 items-center justify-between">
         <Link href="/" className="group flex items-center gap-3">
           <span className="relative flex h-12 w-12 shrink-0 items-center justify-center overflow-visible">
-            <Image src="/logo-mark.png" alt="" width={96} height={96} priority className="h-16 w-16 max-w-none object-contain" />
+            <Image src="/logo.png" alt="" width={96} height={96} priority className="h-16 w-16 max-w-none object-contain" />
           </span>
           <span className="text-xl font-bold text-text-dark">KnowMatrix</span>
         </Link>
