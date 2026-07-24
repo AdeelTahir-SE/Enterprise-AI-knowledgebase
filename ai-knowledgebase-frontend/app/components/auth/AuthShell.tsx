@@ -16,7 +16,7 @@ export function AuthShell({ title, subtitle, children }: AuthShellProps) {
         <section className="relative overflow-hidden bg-gradient-to-br from-[#5B3FE6] via-primary to-[#7C5CE6] p-8 text-white sm:p-10 lg:p-12">
           <div className="relative z-10 flex h-full flex-col justify-between gap-12">
             <Link href="/" className="inline-flex w-fit items-center gap-2.5">
-              <Image src="/logo.png" alt="" width={40} height={40} priority className="h-9 w-9 object-contain brightness-0 invert" />
+              <Image src="/logo.png" alt="" width={48} height={48} priority className="h-11 w-11 object-contain brightness-0 invert" />
               <span className="text-xl font-bold">KnowMatrix</span>
             </Link>
 

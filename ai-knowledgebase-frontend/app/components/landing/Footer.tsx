@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="mb-12 grid grid-cols-2 gap-8 sm:gap-10 md:grid-cols-3 lg:grid-cols-7">
           <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-6">
             <Link href="/" className="group mb-4 inline-flex items-center gap-2.5">
-              <Image src="/logo.png" alt="" width={40} height={40} className="h-9 w-9 object-contain" />
+              <Image src="/logo.png" alt="" width={48} height={48} className="h-11 w-11 object-contain" />
               <span className="text-xl font-bold text-text-dark">KnowMatrix</span>
             </Link>
             <p className="mb-5 max-w-xs text-sm leading-7 text-text-light">Enterprise AI Knowledge Platform to build, manage and deploy intelligent assistants over your private data.</p>
